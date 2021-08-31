@@ -16,7 +16,6 @@ option {
 }
 .header {
     background: linear-gradient(90deg, #2e303f, #0b0c10);
-    width: 100%;
     padding: 20px 50px;
     &__inner {
         display: flex;
@@ -25,7 +24,7 @@ option {
     }
     &__logo {
         height: 37px;
-        width: 100px;
+        min-width: 100px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -41,7 +40,7 @@ option {
                 background-color: #2e303f;
                 border-width: 0px;
                 border-radius: 20px;
-                height: 40px;
+                min-height: 40px;
                 padding: 10px 70px;
                 color: #fff;
             }
@@ -78,4 +77,56 @@ option {
     height: 50px;
     border-radius: 50%;
     overflow: hidden;
+}
+.main {
+    &__nav {
+        background: linear-gradient(0deg, #15191c, #323642);
+        max-width: 300px;
+        width: 100%;
+        padding: 100px 0 200px 30px;
+        li {
+            a {
+                display: block;
+                padding: 13px 30px;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: #292b37;
+                    color: #5f4a8b;
+                }
+            }
+        }
+    }
+    &__title {
+        color: #fff;
+        margin: 15px 0px 15px 15px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 1100px) {
+    .header__logo {
+        margin: 0 80px 0 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .main__nav {
+        display: none;
+    }
+    .header {
+        position: relative;
+    }
+    .header__search {
+        position: absolute;
+        width: 100%;
+        bottom: -40px;
+        left: 0;
+        right: 0;
+    }
+    .header__search form input {
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+    }
 }

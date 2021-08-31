@@ -1,17 +1,16 @@
 html,
 body {
-	height: 100%;
 	background-color: #0b0c10;
-	font-family: 'Roboto-Regular';
+	font-family: "Roboto-Regular";
+	color: #70727e;
 }
 
-.container{
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 15px;
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
 }
-
-
-
+a {
+	color: inherit;
+}
 
 
