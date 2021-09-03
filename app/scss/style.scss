@@ -82,8 +82,7 @@ option {
     display: flex;
     &__nav {
         background: linear-gradient(0deg, #15191c, #323642);
-        max-width: 300px;
-        width: 100%;
+        min-width: 18%;
         padding: 100px 0 300px 30px;
         li {
             a {
@@ -105,18 +104,18 @@ option {
     }
     &__content {
         background: linear-gradient(-45deg, #000, #2a2c38);
-        width: 100%;
+        width: 80%;
         margin: 30px 0 0 30px;
-        display: block;
         position: relative;
     }
     &__right {
         position: absolute;
-        right: 30px;
+        right: 0px;
         top: 0;
+        max-width: 32%;
     }
     &__stats {
-        &-item{
+        &-item {
             text-align-last: left;
         }
         &-number {
@@ -188,8 +187,9 @@ option {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            width: 80px;
-            height: 80px;
+            min-width: 80px;
+            // width: 100%;
+            min-height: 80px;
             border-radius: 50%;
             margin-right: 10px;
         }
@@ -214,14 +214,123 @@ option {
                 padding-left: 2px;
             }
         }
-        &-btn{
-            a{
+        &-btn {
+            a {
                 padding: 10px 16px;
                 border: 1px solid #70727e;
                 border-radius: 100px;
                 text-transform: uppercase;
                 font-size: 14px;
             }
+        }
+    }
+    &__feed {
+        padding: 30px 10px 100px 30px;
+        max-width: 68%;
+        &-info {
+            padding: 25px 0 20px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+    }
+}
+.feed {
+    &__slider {
+
+        // width: 100%; 
+        &-item {
+            // max-width: 580px;
+            margin-right: 30px;
+        }
+        &-trifle{
+            margin-right: 30px;
+        }
+        &-box {
+            background-color: #25262b;
+            border-radius: 25px;
+            overflow: hidden;
+            display: flex;
+            justify-content: start;
+            color: #fff;
+            font-size: 12px;
+            line-height: 20px;
+            margin-right: 30px;
+        }
+        &-img {
+            flex-basis: 165px;
+            max-width: 165px;
+            height: auto;
+            // height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &-info {
+            padding: 20px;
+        }
+        &-title {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        &-before {
+            padding-left: 90px;
+            position: relative;
+        }
+        &-credit {
+            &::before {
+                content: "Credit:";
+                position: absolute;
+                color: #70727e;
+                left: 0;
+            }
+        }
+        &-artist {
+            &::before {
+                content: "Artist:";
+                position: absolute;
+                color: #70727e;
+                left: 0;
+            }
+        }
+        &-album {
+            &::before {
+                content: "Album:";
+                position: absolute;
+                color: #70727e;
+                left: 0;
+            }
+        }
+        &-label {
+            &::before {
+                content: "Label:";
+                position: absolute;
+                color: #70727e;
+                left: 0;
+            }
+        }
+        &-date {
+            &::before {
+                content: "Release Date:";
+                position: absolute;
+                color: #70727e;
+                left: 0;
+            }
+        }
+        &-streams {
+            &::before {
+                content: "Streams:";
+                position: absolute;
+                color: #70727e;
+                left: 0;
+            }
+        }
+        &-trifle {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            line-height: 20px;
+            margin-bottom: 10px;
         }
     }
 }
@@ -233,4 +342,8 @@ option {
 }
 .pro {
     display: block;
+}
+.slider__box{
+    margin: 0;
+    padding: 0;
 }
