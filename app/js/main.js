@@ -7,7 +7,7 @@ $(function () {
         prevArrow: '<img class="prev-arrow arrows" src="../images/arrow-right.svg" alt="">',
         responsive: [
             {
-                breakpoint: 1824,
+                breakpoint: 1400,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -39,7 +39,7 @@ $(function () {
         prevArrow: '<img class="prev-arrow arrows" src="../images/arrow-right.svg" alt="">',
         responsive: [
             {
-                breakpoint: 1824,
+                breakpoint: 1400,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
